@@ -1,0 +1,15 @@
+---
+- name: Install Generic Packages GUI - Debian
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - "{{ os_packages_gui }}"
+  when: "{{ os_desktop_enable }}"
+
+- name: Remove Banned Packages
+  apt:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ os_banned_packages }}"
