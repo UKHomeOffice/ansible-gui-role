@@ -3,11 +3,11 @@
 dependencies:
   - name: kubectl
     src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 9be1196f8b9cf86038f54469372b5b1b2dbbf3a4
+    version: 6aaaa859395fb1c94c0120d9b2ef042f11c9c966
     when: os_desktop_enable == True 
   - name: virtualbox
     src: git+https://github.com/KEAOSolutions/ansible-virtualbox
-    version: 7b387ae3a9770d3fc6485081c06335adc453ae9e
+    version: 9bf2d58accdc86a56fc53551efb83e094b86d1ef
     when: os_desktop_enable == True 
   - name: sublime
     src: git+https://github.com/UKHomeOffice/ansible-role-sublime
@@ -15,7 +15,7 @@ dependencies:
     when: os_desktop_enable == True 
   - name: minikube
     src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: d833e7958d6c9a12da8e694696ef53c018289cff
+    version: 38ca502aaa4f1f4aa22c4714618d18867a662ac6
     when: os_desktop_enable == True 
   - name: packer
     src: git+https://github.com/UKHomeOffice/ansible-packer
@@ -27,11 +27,11 @@ dependencies:
     when: os_desktop_enable == True 
   - name: slack
     src: git+https://github.com/KEAOSolutions/ansible-role-slack
-    version: 368ec57f9e5f0b61622a3236a20bef7d1141e868
+    version: b70c1a8189026e9d7a37b05cd99451c5a817fccc
     when: os_desktop_enable == True 
   - name: chrome
     src: git+https://github.com/UKHomeOffice/ansible-role-chrome
-    version: b2eb8ebf38ec720a68bae1b52c94786683820c58
+    version: cd0ef7003c41527c986fc4c6d6dd6d36cdcf02d0
     when: os_desktop_enable == True 
 
 galaxy_info:
