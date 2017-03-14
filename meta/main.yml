@@ -3,7 +3,7 @@
 dependencies:
   - name: kubectl
     src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 9be1196f8b9cf86038f54469372b5b1b2dbbf3a4
+    version: 6aaaa859395fb1c94c0120d9b2ef042f11c9c966
     when: os_desktop_enable == True 
   - name: virtualbox
     src: git+https://github.com/KEAOSolutions/ansible-virtualbox
@@ -15,7 +15,7 @@ dependencies:
     when: os_desktop_enable == True 
   - name: minikube
     src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: d833e7958d6c9a12da8e694696ef53c018289cff
+    version: 38ca502aaa4f1f4aa22c4714618d18867a662ac6
     when: os_desktop_enable == True 
   - name: packer
     src: git+https://github.com/UKHomeOffice/ansible-packer
