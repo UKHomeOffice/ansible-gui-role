@@ -1,6 +1,6 @@
 ---
 - name: Holding snapd
-  dpkg_selection:
+  dpkg_selections:
     name: snapd
     selection: hold
 
