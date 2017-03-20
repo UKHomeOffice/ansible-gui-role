@@ -10,8 +10,8 @@ dependencies:
     version: 6aaaa859395fb1c94c0120d9b2ef042f11c9c966
     when: os_desktop_enable == True 
   - name: virtualbox
-    src: git+https://github.com/KEAOSolutions/ansible-virtualbox
-    version: 9bf2d58accdc86a56fc53551efb83e094b86d1ef
+    src: git+https://github.com/UKHomeOffice/ansible-role-virtualbox
+    version: f2494d443c7156ce98298f213e034e941a80008a
     when: os_desktop_enable == True 
   - name: sublime
     src: git+https://github.com/UKHomeOffice/ansible-role-sublime
