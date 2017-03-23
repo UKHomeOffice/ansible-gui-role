@@ -39,7 +39,7 @@ dependencies:
     when: os_desktop_enable == True 
   - name: wifi-fix
     src: git+https://github.com/UKHomeOffice/ansible-role-wifi-fix
-    version: 81829635e6211e01fe66c7676f3d340c91c159d8
+    version: 659475b1e05ee2ca21f006e8b224d8fae9035d4d
     when: os_desktop_enable == True
 
 galaxy_info:
