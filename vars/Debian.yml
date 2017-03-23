@@ -5,6 +5,7 @@ os_packages_gui:
   - pinentry-gtk2
   - metacity-themes
   - ubuntu-gnome-desktop
+  - dkms
   - network-manager-openvpn-gnome
   - ykneomgr
   - yubioath-desktop

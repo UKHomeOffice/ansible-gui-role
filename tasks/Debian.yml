@@ -1,4 +1,9 @@
 ---
+- name: Holding snapd
+  dpkg_selections:
+    name: snapd
+    selection: hold
+
 - name: Install Generic Packages GUI - Debian
   apt:
     name: "{{ item }}"

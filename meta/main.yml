@@ -1,13 +1,17 @@
 ---
 
 dependencies:
+  - name: displayLinkDriver
+    src: git+https://github.com/UKHomeOffice/ansible-role-displayLinkDriver
+    version: 36e1bf7a6f644250b318b1e6ec61c3c48383bd1f
+    when: os_desktop_enable == True
   - name: kubectl
     src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
     version: 6aaaa859395fb1c94c0120d9b2ef042f11c9c966
     when: os_desktop_enable == True 
   - name: virtualbox
-    src: git+https://github.com/KEAOSolutions/ansible-virtualbox
-    version: 9bf2d58accdc86a56fc53551efb83e094b86d1ef
+    src: git+https://github.com/UKHomeOffice/ansible-role-virtualbox
+    version: f2494d443c7156ce98298f213e034e941a80008a
     when: os_desktop_enable == True 
   - name: sublime
     src: git+https://github.com/UKHomeOffice/ansible-role-sublime
@@ -33,6 +37,10 @@ dependencies:
     src: git+https://github.com/UKHomeOffice/ansible-role-chrome
     version: cd0ef7003c41527c986fc4c6d6dd6d36cdcf02d0
     when: os_desktop_enable == True 
+  - name: wifi-fix
+    src: git+https://github.com/UKHomeOffice/ansible-role-wifi-fix
+    version: 659475b1e05ee2ca21f006e8b224d8fae9035d4d
+    when: os_desktop_enable == True
 
 galaxy_info:
   author: Mark Olliver
