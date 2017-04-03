@@ -30,7 +30,7 @@ dependencies:
     version: 3cbc91cca808c2ed54de99ad765b163e24b38cb9
     when: os_desktop_enable == True 
   - name: slack
-    src: git+https://github.com/KEAOSolutions/ansible-role-slack
+    src: git+https://github.com/UKHomeOffice/ansible-role-slack
     version: b70c1a8189026e9d7a37b05cd99451c5a817fccc
     when: os_desktop_enable == True 
   - name: chrome
