@@ -3,7 +3,7 @@
 dependencies:
   - name: displayLinkDriver
     src: git+https://github.com/UKHomeOffice/ansible-role-displayLinkDriver
-    version: 36e1bf7a6f644250b318b1e6ec61c3c48383bd1f
+    version: cd79296512eeabb25b6f2f0b76e39718077c670e
     when: os_desktop_enable == True
   - name: kubectl
     src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
