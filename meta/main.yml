@@ -27,7 +27,7 @@ dependencies:
     when: os_desktop_enable == True 
   - name: vagrant
     src: git+https://github.com/UKHomeOffice/ansible-role-vagrant
-    version: 326afcb9d24f2eecc76dabb8d93df44bf0e9b94f
+    version: 04532c1348d5807fbe73be6af573ad96ec95850d
     when: os_desktop_enable == True 
   - name: slack
     src: git+https://github.com/UKHomeOffice/ansible-role-slack
