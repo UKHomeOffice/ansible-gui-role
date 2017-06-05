@@ -7,7 +7,7 @@ dependencies:
     when: os_desktop_enable == True
   - name: kubectl
     src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 6aaaa859395fb1c94c0120d9b2ef042f11c9c966
+    version: 19dce41f2bde11ee8004ce46e15524bbe51aa1dc
     when: os_desktop_enable == True 
   - name: virtualbox
     src: git+https://github.com/UKHomeOffice/ansible-role-virtualbox
@@ -15,15 +15,15 @@ dependencies:
     when: os_desktop_enable == True 
   - name: sublime
     src: git+https://github.com/UKHomeOffice/ansible-role-sublime
-    version: 3726595cc83231ccc06da4515911ecd4f533b609
+    version: ded06152465636d03c43a54160ffa3341e33f1ae
     when: os_desktop_enable == True 
   - name: minikube
     src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: 38ca502aaa4f1f4aa22c4714618d18867a662ac6
+    version: f2edec247626d083f277ea8072bb63d733f4ba83
     when: os_desktop_enable == True 
   - name: packer
     src: git+https://github.com/UKHomeOffice/ansible-packer
-    version: 96cd678b919d1309458b8366b99fd36e3eb41553
+    version: 49555fdbc6c751deac8da7c1db471651170539e6
     when: os_desktop_enable == True 
   - name: vagrant
     src: git+https://github.com/UKHomeOffice/ansible-role-vagrant
