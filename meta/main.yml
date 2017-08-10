@@ -2,45 +2,25 @@
 
 dependencies:
   - name: displayLinkDriver
-    src: git+https://github.com/UKHomeOffice/ansible-role-displayLinkDriver
-    version: cd79296512eeabb25b6f2f0b76e39718077c670e
-    when: os_desktop_enable == True
+    when: os_desktop_enable
   - name: kubectl
-    src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 19dce41f2bde11ee8004ce46e15524bbe51aa1dc
-    when: os_desktop_enable == True 
+    when: os_desktop_enable
   - name: virtualbox
-    src: git+https://github.com/UKHomeOffice/ansible-role-virtualbox
-    version: f2494d443c7156ce98298f213e034e941a80008a
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: sublime
-    src: git+https://github.com/UKHomeOffice/ansible-role-sublime
-    version: ded06152465636d03c43a54160ffa3341e33f1ae
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: minikube
-    src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: f2edec247626d083f277ea8072bb63d733f4ba83
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: packer
-    src: git+https://github.com/UKHomeOffice/ansible-packer
-    version: 49555fdbc6c751deac8da7c1db471651170539e6
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: vagrant
-    src: git+https://github.com/UKHomeOffice/ansible-role-vagrant
-    version: 04532c1348d5807fbe73be6af573ad96ec95850d
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: slack
-    src: git+https://github.com/UKHomeOffice/ansible-role-slack
-    version: b70c1a8189026e9d7a37b05cd99451c5a817fccc
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: chrome
-    src: git+https://github.com/UKHomeOffice/ansible-role-chrome
-    version: cd0ef7003c41527c986fc4c6d6dd6d36cdcf02d0
-    when: os_desktop_enable == True 
+    when: os_desktop_enable 
   - name: wifi-fix
-    src: git+https://github.com/UKHomeOffice/ansible-role-wifi-fix
-    version: 13e56f7d99bef0469ac61faf5572ed1833bd22b0
-    when: os_desktop_enable == True
+    when: os_desktop_enable
 
 galaxy_info:
   author: Mark Olliver
