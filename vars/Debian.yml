@@ -146,3 +146,15 @@ os_banned_packages:
   - fenix
   - bsdgames-nonfree
   - exult-studio
+
+sudoers_rules:
+  - { regexp: '#\sCmnd\salias', line: 'Cmnd_Alias STAFF_PASS = /usr/sbin/openvpn' }
+  - { regexp: '#\sCmnd\salias', line: 'Cmnd_Alias STAFF_NO_PASS = /usr/bin/docker' }
+  - { regexp: 'EOF', line: '# Allow users in the staff group to run docker and openvpn as root'}
+  - { regexp: 'EOF', line: '%staff ALL=(ALL) STAFF_PASS'}
+  - { regexp: 'EOF', line: '%staff ALL=(ALL) NOPASSWD: STAFF_NO_PASS'}
+
+bashrc_alias:
+  - "# Alias for docker and openvpn to allow non-sudo users native access to these commands"
+  - "alias docker='sudo /usr/bin/docker'"
+  - "alias openvpn='sudo /usr/sbin/openvpn'"
