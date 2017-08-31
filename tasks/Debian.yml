@@ -18,3 +18,20 @@
     state: absent
   with_items:
     - "{{ os_banned_packages }}"
+
+- name: Configure 'sudoers' file
+  lineinfile:
+    dest: /etc/sudoers
+    insertafter: "{{ item.regexp}}"
+    line: "{{ item.line }}"
+    validate: '/usr/sbin/visudo -cf %s'
+  with_items:
+    - "{{ sudoers_rules }}"
+
+- name: Configure /etc/bash.bashrc
+  lineinfile:
+    dest: /etc/bash.bashrc
+    insertafter: EOF
+    line: "{{item}}"
+  with_items:
+    - "{{ bashrc_alias }}"
